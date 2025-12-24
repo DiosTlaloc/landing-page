@@ -9,17 +9,33 @@ button {
     border-radius: 8px;
     padding: 10px 20px;
     font-size: 16px;
+    border-color: #F9FAFB;
 }
 
-.header *, .hero *:not(button), .footer { 
+.header, .hero, .footer { 
     background-color: #1F2937;
+}
+
+.logo, .header-links *, .title, .subtext, .footer {
     color: #F9FAFB;
     font: 'Roboto', sans-serif;
+}
+
+.header-links {
+    display: flex;
+    gap: 30px;
 }
 
 .title {
     font-size: 48px;
     font-weight: 900;
+    width: 400px;
+}
+
+.subtext {
+    font-size: 18px;
+    font-weight: 400;
+    width: 400px;
 }
 
 .content-title {
@@ -28,11 +44,112 @@ button {
     color: #1F2937;
 }
 
-.quote * {
+.quote {
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
-.call-to-action {
+.quote-text, .quote-author {
+    width: 800px;
+    margin-left: 400px;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.quote-text {
+    font-weight: 300px;
+}
+
+.quote-author {
+    font-weight: 400px;
+    display: flex;
+    justify-content: right;
+}
+
+.header {
+    padding: 30px 350px 30px 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    padding: 100px 350px 100px 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-image {
+    width: 400px;
+    height: 250px;
+    border: white, 2px solid;
+}
+
+.content-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-image {
+    width: 200px;
+    height: 250px;
+    border: black, 2px solid;
+    border-radius: 20px;
+}
+
+.image-caption {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.content {
+    display: flex;
+    padding: 50px 350px 100px 350px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-items {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+.cta-content {
+    background-color: #3882F6;
+    display: flex;
     background-color: #3882F6;
     color: #F9FAFB;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-left:100px;
+    padding-right:100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.cta-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cta-title {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+}
+
+
